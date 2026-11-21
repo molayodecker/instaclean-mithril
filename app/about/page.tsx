@@ -36,7 +36,7 @@ export default function AboutPage() {
           <p className="mt-6 text-lg leading-relaxed text-muted">The more professionals we met, the clearer a second problem became. Many cleaners, nannies, caregivers and drivers have years of steady work behind them and almost nothing to show for it.</p>
           <p className="mt-4 text-lg leading-relaxed text-muted">Pay arrives in cash. Agreements are verbal. References live in an old employer&apos;s phone. Without formal employment records or a payment history, it is hard to prove what you earn, and harder still to buy a phone on installments, open savings or get credit.</p>
           <p className="mt-4 text-lg leading-relaxed text-muted">A good household and a good worker need each other. We want to build for both.</p>
-          <p className="mt-4 text-lg leading-relaxed text-muted">So Instaclean is growing from a home services marketplace into technology for the whole relationship: finding help, then <Link href="/manage" className="font-semibold underline decoration-yellow decoration-2 underline-offset-4">managing and paying workers</Link> with clear records, and through <Link href="/demfi" className="font-semibold underline decoration-yellow decoration-2 underline-offset-4">Demfi</Link>, helping workers turn that record into fairer access to smartphones and, over time, other financial opportunities.</p>
+          <p className="mt-4 text-lg leading-relaxed text-muted">So Instaclean is growing from a home services marketplace into technology for the whole relationship: finding help, then <Link href="/manage" className="font-semibold underline decoration-yellow decoration-2 underline-offset-4">managing and paying workers</Link> with clear records, and through <Link href="/pay2own" className="font-semibold underline decoration-yellow decoration-2 underline-offset-4">Pay2own</Link>, helping workers turn that record into fairer access to smartphones and, over time, other financial opportunities.</p>
         </div>
         <img src="/images/about-worker-notebook.webp" alt="Housekeeper reading a worn paper notebook on a veranda at the end of her work day" className="aspect-[4/5] w-full rounded-2xl object-cover" />
       </Container>
@@ -48,7 +48,7 @@ export default function AboutPage() {
             {[
               ["/services", "Instaclean Services", "Live now", "Helping households book trusted, vetted professionals."],
               ["/manage", "Instaclean Manage", "Coming soon", "Helping households and businesses onboard, schedule and pay their workers, with records both sides can keep."],
-              ["/demfi", "Demfi", "Coming soon", "Helping service workers reach smartphones and, over time, other financial opportunities built on their work."],
+              ["/pay2own", "Pay2own", "Coming soon", "Helping service workers reach smartphones and, over time, other financial opportunities built on their work."],
             ].map(([href, title, badge, body]) => (
               <Link key={href} href={href} className="rounded-2xl border border-white/10 p-6 no-underline hover:bg-white/5">
                 <p className="text-sm font-semibold text-yellow">{badge}</p>
@@ -85,7 +85,7 @@ export default function AboutPage() {
       <section className="bg-yellow">
         <Container className="py-16">
           <h2 className="max-w-3xl text-4xl font-bold tracking-tight md:text-6xl">Ready for an easier way to look after your home?</h2>
-          <p className="mt-4 max-w-2xl text-lg">Right now we help families book trusted professionals. Next come Instaclean Manage for the people who employ them and Demfi for the workers themselves.</p>
+          <p className="mt-4 max-w-2xl text-lg">Right now we help families book trusted professionals. Next come Instaclean Manage for the people who employ them and Pay2own for the workers themselves.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/book-a-service" className="inline-flex h-12 items-center rounded-full bg-navy px-7 font-semibold text-white no-underline">Book now</Link>
             <Link href="/vision" className="inline-flex h-12 items-center rounded-full border border-ink/30 px-7 font-semibold no-underline">Our vision</Link>

@@ -8,7 +8,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/manage", label: "Instaclean Manage" },
-  { href: "/demfi", label: "Demfi" },
+  { href: "/pay2own", label: "Pay2own" },
   { href: "/about", label: "About" },
   { href: "/vision", label: "Our Vision" },
   { href: "/contact", label: "Contact" },

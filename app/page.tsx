@@ -56,7 +56,7 @@ export default function HomePage() {
               Three connected products, one home platform
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-              Booking home help is live today. Managing and paying your workers, and Demfi for the workers themselves, are on the way.
+              Booking home help is live today. Managing and paying your workers, and Pay2own for the workers themselves, are on the way.
             </p>
           </div>
           <div className="mt-14 grid gap-8 lg:grid-cols-3">
@@ -80,9 +80,9 @@ export default function HomePage() {
                 alt: "Father handing a lunchbox to the family nanny, who holds their toddler",
               },
               {
-                href: "/demfi",
+                href: "/pay2own",
                 badge: "Coming soon",
-                title: "Demfi",
+                title: "Pay2own",
                 body: "Financial opportunities built around work.",
                 detail: "Our financial technology initiative aims to make smartphones and other financial opportunities more accessible to service workers through installment plans and responsible financial partnerships.",
                 image: "/images/worker-between-jobs.webp",
