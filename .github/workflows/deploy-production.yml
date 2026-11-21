@@ -1,0 +1,44 @@
+name: Deploy production
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+env:
+  VERCEL_ORG_ID: team_k83EgQA7penYrYOX1GQRsnyL
+  VERCEL_PROJECT_ID: prj_FP3ilUAhgplRIEUhQjmeLm4Ov8Sa
+  VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Require Vercel token
+        run: test -n "$VERCEL_TOKEN" || { echo "Add the VERCEL_TOKEN repository secret."; exit 1; }
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@66.2.0
+
+      - name: Pull production settings
+        run: vercel pull --yes --environment=production --scope instaclean-prod
+
+      - name: Build
+        run: vercel build --prod --scope instaclean-prod
+
+      - name: Deploy
+        run: vercel deploy --prebuilt --prod --scope instaclean-prod
