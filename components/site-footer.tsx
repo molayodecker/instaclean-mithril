@@ -21,7 +21,7 @@ export function SiteFooter() {
               <img src={LOGO} alt="Instaclean" width={150} height={36} className="h-9 w-auto" />
             </Link>
             <p className="mt-5 max-w-xs leading-relaxed text-mist">
-              Better homes. Better work. Better opportunities. Home services, workforce management and Demfi, starting in Ghana.
+              Better homes. Better work. Better opportunities. Home services, workforce management and Pay2own, starting in Ghana.
             </p>
             <a
               href={APP_LINK}
@@ -56,7 +56,7 @@ export function SiteFooter() {
             <p className="text-sm font-bold">For professionals</p>
             <ul className="mt-5 space-y-3">
               <li><Link className="text-mist hover:text-white" href="/join-as-cleaner">Join our platform</Link></li>
-              <li><Link className="text-mist hover:text-white" href="/demfi">Demfi</Link></li>
+              <li><Link className="text-mist hover:text-white" href="/pay2own">Pay2own</Link></li>
               <li><a className="text-mist hover:text-white" href={CLEANER_HELP}>Resources</a></li>
             </ul>
           </nav>

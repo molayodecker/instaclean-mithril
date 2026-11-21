@@ -41,10 +41,10 @@ const pillars = [
   {
     badge: "In development",
     title: "Financial Inclusion",
-    body: "Demfi-enabled device ownership and future access to financial services through responsible partnerships.",
+    body: "Pay2own-enabled device ownership and future access to financial services through responsible partnerships.",
     detail: "Starting with smartphones on clear installment plans, offered with partners, never as a bank or lender.",
-    href: "/demfi",
-    cta: "Discover Demfi",
+    href: "/pay2own",
+    cta: "Discover Pay2own",
     image: "/images/demfi-education.webp",
     alt: "Service workers taking notes in a financial education session",
   },

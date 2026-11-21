@@ -4,11 +4,11 @@ import { WaitlistForm } from "@/components/waitlist-form";
 import { Container, YellowButton } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Demfi: Financial Inclusion for Service Workers in Ghana",
+  title: "Pay2own: Financial Inclusion for Service Workers in Ghana",
   description: "Planned Instaclean initiative for service worker financial inclusion. Not a bank or lender. Waitlist open.",
 };
 
-export default function DemfiPage() {
+export default function Pay2ownPage() {
   return (
     <main id="main-content" className="bg-paper text-ink">
       <section className="bg-navy pt-32 text-white md:pt-40">
@@ -18,10 +18,10 @@ export default function DemfiPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-mist md:text-xl">We believe consistent work and documented earnings should help create better financial opportunities.</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <YellowButton href="#waitlist">Join the Demfi Waitlist</YellowButton>
+            <YellowButton href="#waitlist">Join the Pay2own Waitlist</YellowButton>
             <a href="#journey" className="inline-flex h-12 items-center rounded-full border border-white/40 px-7 font-semibold no-underline hover:bg-white/10">See how it works</a>
           </div>
-          <p className="mt-6 text-sm text-mist">Demfi is an Instaclean initiative in development. It is not a bank or lender.</p>
+          <p className="mt-6 text-sm text-mist">Pay2own is an Instaclean initiative in development. It is not a bank or lender.</p>
         </Container>
         <img src="/images/demfi-hero.webp" alt="Two Instaclean professionals in navy polos smiling at a smartphone outside a compound gate in Accra" className="h-[48vh] min-h-[280px] w-full object-cover" />
       </section>
@@ -29,7 +29,7 @@ export default function DemfiPage() {
       <Container className="grid items-center gap-10 py-20 lg:grid-cols-2">
         <div>
           <h2 className="text-4xl font-bold tracking-tight md:text-6xl">Built for the people who keep homes running</h2>
-          <p className="mt-5 text-lg text-muted">Demfi is an Instaclean initiative for cleaners, nannies, caregivers, chefs, drivers and other service workers. A smartphone comes first, because work on Instaclean runs through one.</p>
+          <p className="mt-5 text-lg text-muted">Pay2own is an Instaclean initiative for cleaners, nannies, caregivers, chefs, drivers and other service workers. A smartphone comes first, because work on Instaclean runs through one.</p>
           <dl className="mt-8 grid gap-5">
             {[
               ["Smartphone and device financing", "Pay for a phone over time instead of all at once, through plans offered with partners."],
@@ -52,7 +52,7 @@ export default function DemfiPage() {
       <section id="journey" className="scroll-mt-24 bg-white">
         <Container className="py-20">
           <h2 className="max-w-3xl text-4xl font-bold tracking-tight md:text-6xl">From Employment to Opportunity</h2>
-          <p className="mt-4 max-w-2xl text-lg text-muted">Steady work should leave a trail you can use. Here is the path Demfi is being built around, and where each part stands today.</p>
+          <p className="mt-4 max-w-2xl text-lg text-muted">Steady work should leave a trail you can use. Here is the path Pay2own is being built around, and where each part stands today.</p>
           <ol className="mt-12 grid gap-8 md:grid-cols-2">
             {[
               ["Live today", "Find Work", "Get jobs through Instaclean as a vetted cleaner or household professional.", "/join-as-cleaner", "Join as a professional"],
@@ -75,11 +75,11 @@ export default function DemfiPage() {
       <Container className="grid items-center gap-10 py-20 lg:grid-cols-2">
         <img src="/images/worker-between-jobs.webp" alt="Instaclean professional smiling at his phone between jobs outside an Accra compound" className="aspect-[4/5] w-full rounded-2xl object-cover" />
         <div>
-          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">What Demfi is, and what it isn&apos;t</h2>
+          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">What Pay2own is, and what it isn&apos;t</h2>
           <p className="mt-4 text-muted">Money decisions deserve plain answers. Here is where we stand.</p>
           <dl className="mt-8 grid gap-5">
             {[
-              ["Not a bank or lender", "Demfi is an Instaclean initiative. It is not a bank, and it does not lend money."],
+              ["Not a bank or lender", "Pay2own is an Instaclean initiative. It is not a bank, and it does not lend money."],
               ["Nothing to apply for yet", "No device plans, loans or credit services are offered today. The waitlist is how we'll tell you when that changes."],
               ["Clear terms first", "Any plan will show the full cost and every payment date before you agree to it."],
               ["Your record, your choice", "Your work and payment history goes to a partner only if you agree."],
@@ -98,7 +98,7 @@ export default function DemfiPage() {
       <section id="waitlist" className="scroll-mt-24 bg-yellow">
         <Container className="grid gap-10 py-20 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <h2 className="text-4xl font-bold tracking-tight md:text-6xl">Join the Demfi Waitlist</h2>
+            <h2 className="text-4xl font-bold tracking-tight md:text-6xl">Join the Pay2own Waitlist</h2>
             <dl className="mt-8 grid gap-6">
               <div>
                 <dt className="font-bold">Joining isn&apos;t applying</dt>
@@ -112,12 +112,12 @@ export default function DemfiPage() {
           </div>
           <div className="lg:col-span-7">
             <WaitlistForm
-              idPrefix="demfi"
+              idPrefix="pay2own"
               roleLabel="I am"
               roles={["A service worker", "An employer of household staff", "A business", "A potential financial or device partner"]}
-              consent="Instaclean may contact me by phone, WhatsApp or email about Demfi. I understand this is not an application for credit."
-              submitLabel="Join the Demfi Waitlist"
-              successMessage="You're on the Demfi waitlist. This is not a credit application."
+              consent="Instaclean may contact me by phone, WhatsApp or email about Pay2own. I understand this is not an application for credit."
+              submitLabel="Join the Pay2own Waitlist"
+              successMessage="You're on the Pay2own waitlist. This is not a credit application."
             />
           </div>
         </Container>
