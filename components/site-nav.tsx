@@ -17,8 +17,6 @@ const links = [
 const menuLinks = [
   ...links,
   { href: "/join-as-cleaner", label: "Join as Worker" },
-  { href: "/sign-in", label: "Sign In" },
-  { href: "/sign-up", label: "Sign Up" },
   { href: "/book-a-service", label: "Book a Service" },
 ];
 
@@ -71,12 +69,6 @@ export function SiteNav() {
               Join as Worker
             </Link>
             <span className="site-header__rule" aria-hidden />
-            <Link href="/sign-in" className="site-header__link">
-              Sign In
-            </Link>
-            <Link href="/sign-up" className="site-header__link">
-              Sign Up
-            </Link>
             <Link href="/book-a-service" className="site-header__link site-header__link--strong">
               Book a Service
             </Link>
