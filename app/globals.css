@@ -87,10 +87,8 @@ body {
   position: absolute;
   inset: 0;
   border-bottom: 1px solid rgb(255 255 255 / 0.1);
-  background: color-mix(in srgb, var(--color-navy) 95%, transparent);
-  backdrop-filter: blur(16px);
-  opacity: 0;
-  transition: opacity 0.4s ease;
+  background: var(--color-navy);
+  opacity: 1;
   pointer-events: none;
 }
 
