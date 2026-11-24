@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
+import { headers } from "next/headers";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteNav } from "@/components/site-nav";
 import "./globals.css";
@@ -21,13 +22,15 @@ export const metadata: Metadata = {
   icons: { icon: "/favicon.ico" },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const bare = (await headers()).get("x-instaclean-bare") === "1";
+
   return (
-    <html lang="en" className={`${figtree.variable} dark`}>
+    <html lang="en" className={bare ? figtree.variable : `${figtree.variable} dark`}>
       <body>
-        <SiteNav />
+        {bare ? null : <SiteNav />}
         {children}
-        <SiteFooter />
+        {bare ? null : <SiteFooter />}
       </body>
     </html>
   );
